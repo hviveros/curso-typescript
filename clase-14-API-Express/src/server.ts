@@ -14,6 +14,22 @@ app.get('/hola', (req, res) => {
         res.json({ message: 'Hola Mundo',});
     }
 );
+
+// POST - Crear datos
+app.post('/recursos', (req, res) => {
+// Lógica para crear un recurso
+});
+
+// PUT - Actualizar datos
+app.put('/recursos/:id', (req, res) => {
+// Lógica para actualizar un recurso
+});
+
+// DELETE - Eliminar datos
+app.delete('/recursos/:id', (req, res) => {
+// Lógica para eliminar un recurso
+});
+
 // Funcion listen (escuchar)
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT} from API Express TS`);
